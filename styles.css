@@ -85,6 +85,20 @@ ul li a:hover {
 	color: rgba(34, 38, 42, 0.8);
 }
 
+.burger {
+	display: none;
+	/*display: block;*/
+/*	position: absolute;
+	margin-left: -17px;
+	left: 50%;*/
+}
+.burger div {
+	width: 23px;
+	height: 1px;
+	background-color: rgba(34, 38, 42, 0.4);
+	margin: 6px;
+}
+
 /*----------------------------------------------REVIEWS-----------------------------------------------*/
 
 #review-container {
@@ -294,6 +308,32 @@ footer {
 		.icons {
 			padding-right: 40px;
 		}*/
+.burger {
+	display: block;
+	position: absolute;
+	margin-left: -17px;
+	left: 50%;
+}
+
+.burger div {
+	width: 22px;
+	height: 1px;
+	background-color: rgba(34, 38, 42, 0.4);
+	margin: 6px;
+}
+
+nav ul {
+	display: none;
+}
+
+nav {
+	height: 18px;
+}
+
+
+
+
+
 }
 
 
