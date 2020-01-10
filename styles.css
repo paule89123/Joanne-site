@@ -7,7 +7,6 @@
 body {
 	color: #212529;
 	text-align: center;
-	/*overflow: hidden;*/
 }
 
 .default-text {
@@ -22,7 +21,7 @@ main {
 	display: inline-block;
 	position: relative;
 	transform: translateY(0px);
-	transition: transform 0.5s ease;
+	transition: none;
 }
 
 .homepage-media {
@@ -74,7 +73,7 @@ ul li a {
 	font-family: 'Nanum Myeongjo', serif;
 	font-size: 15.28px;
 	text-decoration: none;
-	color: rgba(34, 38, 42, 0.6);
+	color: rgba(34, 38, 42, 0.7);
 	padding-left: 12px;
     padding-right: 12px;
 }
@@ -85,21 +84,11 @@ ul li a {
 }
 
 ul li a:hover {
-	color: rgba(34, 38, 42, 0.8);
+	color: rgba(34, 38, 42, 0.9);
 }
 
-.burger {
+.navMobile {
 	display: none;
-	/*display: block;*/
-/*	position: absolute;
-	margin-left: -17px;
-	left: 50%;*/
-}
-.line {
-	/*width: 250px;*/
-	/*height: 1px;*/
-	/*background-color: rgba(34, 38, 42, 0.9);*/
-	/*margin: 6px;*/
 }
 
 /*----------------------------------------------REVIEWS-----------------------------------------------*/
@@ -165,7 +154,7 @@ footer {
 	line-height: 34px;
     font-size: 1.6em;
     transform: translateY(0px);
-	transition: transform 0.5s ease;
+	transition: none;
 }
 
 /*--------------------------------------------MEDIA QUERIES--------------------------------------------*/
@@ -232,8 +221,11 @@ footer {
 
 
 @media (max-width: 600px) {
+
 		main {
 			width: 78.6%;
+			transform: translateY(0px);
+			transition: transform 0.5s ease;
 		}
 
 		.homepage-media1 {
@@ -254,6 +246,7 @@ footer {
 
 		footer {
 			height: 105px;
+			transition: transform 0.5s ease;
 		}
 
 		/*
@@ -301,6 +294,14 @@ footer {
 			padding-right: 40px;
 		}*/
 
+		.navDesktop {
+			display: none;
+		}
+
+		.navMobile {
+			display: block;
+		}
+
 		.burger {
 			display: block;
 			position: absolute;
@@ -315,11 +316,17 @@ footer {
 			width: 24px;
 			height: 1px;
 			background-color: rgba(34, 38, 42, 0.5);
-			/*margin: 6px;*/
-			/*transition: all 0.3s ease;*/
 		}
 
-		nav ul {
+		.navMobile {
+			height: 18px;
+		}
+
+		.navMobile ul li {
+			padding-bottom: 25px;
+		}
+
+		.navMobile ul {
 			position: absolute;
 			height: 200px;
 			width: 100%;
@@ -332,35 +339,10 @@ footer {
 		    transition: transform 0.9s ease, opacity 350ms ease;
 		}
 
-		nav {
-			height: 18px;
-		}
-
-		nav ul li {
-			padding-bottom: 25px;
-		}
-
-		.nav-active {
-			opacity: 1;
-			transform: translateY(0%);
-		    -webkit-transition: -webkit-transform 1s ease; 
-		    -moz-transition: -moz-transform 1s ease;
-		    -o-transition: -o-transform 1s ease;
-		    transition: transform 0.5s ease, opacity 1230ms ease;
-		}
-
-		.main-active {
-			/*position: absolute;*/
-			transform: translateY(229px);
-		}
-
-
 }
 
 
-
-
-
+/*--------------------------------------------BIOGRAPHY--------------------------------------------*/
 
 #bio-container {
 	padding-bottom: 120px;
@@ -375,20 +357,16 @@ footer {
 	width: 50%;
 	top: 40px;
 	right: 0px;
-	/*border: 1px solid #e0e0e0;*/
-	/*border-style: solid;*/
 }
 
 #bio-photo {
 	width: 100%;
-	/*padding-left: 5px;*/
 }
 
 #main-bio {
 	border-top: 1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
 	margin-bottom: 50px;
-
 }
 
 hr {
@@ -400,16 +378,65 @@ hr {
 }
 
 
-/*@keyframes navLinkFade {
-	from {
-		opacity: 0;
-		transform: translateX(50px);
-	}
-	to {
-		opacity: 1;
-		transform: translate(0px);
-	}
-}*/
+/*------------------------------------------BURGER MENU---------------------------------------*/
+
+.line {
+	position: absolute;
+}
+
+#line1 {
+	top: 0px;
+	/*padding-bottom: 10px;*/
+	transition-property: transform, opacity;
+	transition-duration: 165ms, 0s;
+	transition-timing-function: ease-out;
+	transition-delay: 165ms, 165ms;
+}
+
+#line2 {
+	top: 7px;
+	opacity: 1;
+	transition: all 0.3s ease-in;
+}
+
+#line3 {
+	top: 14px;
+	transition-property: transform, opacity;
+	transition-duration: 165ms, 0s;
+	transition-timing-function: ease-out;
+	transition-delay: 165ms, 165ms;
+}
+
+#line4 {
+	top: 7px;
+	opacity: 0;
+	transition-property: transform, opacity;
+	transition-duration: 165ms, 0s;
+	transition-timing-function: ease-in;
+	transition-delay: 0s, 165ms;
+}
+
+#line5 {
+	top: 7px;
+	opacity: 0;
+	transition-property: transform, opacity;
+	transition-duration: 165ms, 0s;
+	transition-timing-function: ease-in;
+	transition-delay: 0s, 165ms;
+}
+
+
+/*------------------------------------------WHEN BURGER MENU IS ACTIVE---------------------------------------*/
+
+.nav-active ul {
+	transform: translateY(0px);
+	opacity: 1;
+    transition: transform 0.5s ease, opacity 1230ms ease;
+}
+
+.main-active {
+	transform: translateY(229px);
+}
 
 .menu-active #line1 {
 	transform: translate(0px, 7px);
@@ -447,95 +474,7 @@ hr {
 	opacity: 1;
 	transition-property: transform, opacity;
 	transition-duration: 165ms, 0s;
-		transition-timing-function: ease-out;
-
-	transition-delay: 165ms, 165ms;
-}
-
-
-
-/*.menu-active .line-1-3-wrapper {
-	opacity: 0;
-	transition: opacity 0s;
-	transition-delay: 165ms;
-}*/
-
-/*.menu-active #line-4-wrapper {
-	transform: rotate(-45deg);
-	transition: all 1s ease;
-	transition-delay: 0.5s;
-}
-
-.menu-active #line-5-wrapper {
-	transform: rotate(45deg);
-	transition: all 1s ease;
-	transition-delay: 0.5s;
-}*/
-
-
-
-
-
-
-
-
-
-
-.wrapper {
-	position: absolute;
-	height: 15px;
-	width: 25px;
-}
-
-.line {
-	position: absolute;
-}
-
-.line1 {
-	top: 0px;
-	/*padding-bottom: 10px;*/
-	transition-property: transform, opacity;
-	transition-duration: 165ms, 0s;
 	transition-timing-function: ease-out;
 	transition-delay: 165ms, 165ms;
 }
 
-.line2 {
-	top: 7px;
-	opacity: 1;
-	transition: all 0.3s ease-in;
-}
-
-.line3 {
-	top: 14px;
-	transition-property: transform, opacity;
-	transition-duration: 165ms, 0s;
-	transition-timing-function: ease-out;
-	transition-delay: 165ms, 165ms;
-}
-
-#line4, .line-4-wrapper {
-	top: 7px;
-	opacity: 0;
-	transition-property: transform, opacity;
-	transition-duration: 165ms, 0s;
-	transition-timing-function: ease-in;
-	transition-delay: 0s, 165ms;
-}
-
-#line5, .line-5-wrapper {
-	top: 7px;
-	opacity: 0;
-	transition-property: transform, opacity;
-	transition-duration: 165ms, 0s;
-	transition-timing-function: ease-in;
-	transition-delay: 0s, 165ms;
-}
-
-/*.opaque {
-	opacity: 0;
-}
-
-.opaque {
-	opacity: 0;
-}*/
