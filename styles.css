@@ -98,7 +98,7 @@ ul li a:hover {
 .line {
 	/*width: 250px;*/
 	/*height: 1px;*/
-	background-color: rgba(34, 38, 42, 0.4);
+	/*background-color: rgba(34, 38, 42, 0.9);*/
 	/*margin: 6px;*/
 }
 
@@ -182,23 +182,19 @@ footer {
 			font-size: 1.4em;
 			line-height: 1.4em;
 		}
-
 		#me {
 			right: 50px;
 		}
-
 		#triangle {
 			top: -20px;
 			right: 50px;
 			width: 45%;
 		}
-
 		.iconContainer {
 			display: flex;
 			top: -40px;
 			left: 0px;
 		}
-
 		.icons {
 			padding-right: 50px;
 		}*/
@@ -222,16 +218,13 @@ footer {
 			font-size: 1.3em;
 			line-height: 1.3em;
 		}
-
 		h1 {
 			font-size: 7.9vw;
 			width: 500px;
 		}
-
 		.iconContainer {
 			top: -35px;
 		}
-
 		.icons {
 			padding-right: 40px;
 		}*/
@@ -273,7 +266,6 @@ footer {
 			right: 0px;
 			text-align: center;
 		}
-
 		#me {
 			position: absolute;
 			max-width: 300px;
@@ -283,24 +275,20 @@ footer {
 			padding: 0;
 			min-width: 300px;
 		}
-
 		#bio {
 			max-width: 84%;
 			position: relative;
 			top: 410px;
 		}
-
 		#triangle {
 			top: -104px;
 			right: 0px;
 			width: 88%;
 		}
-
 		.homepage-media {
 			top: 400px;
 			margin-bottom: 55px;
 		}
-
 		.iconContainer {
 			top: -40px;
 			position: absolute;
@@ -309,7 +297,6 @@ footer {
 			margin: auto;
 			width: 205px;
 		}
-
 		.icons {
 			padding-right: 40px;
 		}*/
@@ -317,19 +304,19 @@ footer {
 		.burger {
 			display: block;
 			position: absolute;
-			height: 17px;
-			width: 25px;
-			margin-left: -12.5px;
+			height: 24px;
+			width: 24px;
+			margin-left: -12px;
 			left: 50%;
 			cursor: pointer;
 		}
 
 		.line {
-			width: 25px;
+			width: 24px;
 			height: 1px;
-			background-color: rgba(34, 38, 42, 0.4);
+			background-color: rgba(34, 38, 42, 0.5);
 			/*margin: 6px;*/
-			transition: all 0.3s ease;
+			/*transition: all 0.3s ease;*/
 		}
 
 		nav ul {
@@ -342,10 +329,7 @@ footer {
 			align-items: center;
 			transform: translateY(-20px);
 			opacity: 0;
-		    -webkit-transition: -webkit-transform 1s ease; 
-		    -moz-transition: -moz-transform 1s ease;
-		    -o-transition: -o-transform 1s ease;
-		    transition: transform 0.9s ease, opacity 0.5s ease;
+		    transition: transform 0.9s ease, opacity 350ms ease;
 		}
 
 		nav {
@@ -362,12 +346,12 @@ footer {
 		    -webkit-transition: -webkit-transform 1s ease; 
 		    -moz-transition: -moz-transform 1s ease;
 		    -o-transition: -o-transform 1s ease;
-		    transition: transform 0.5s ease, opacity 1.4s ease;
+		    transition: transform 0.5s ease, opacity 1230ms ease;
 		}
 
 		.main-active {
 			/*position: absolute;*/
-			transform: translateY(225px);
+			transform: translateY(229px);
 		}
 
 
@@ -427,37 +411,80 @@ hr {
 	}
 }*/
 
-.menu-active .line1 {
+.menu-active #line1 {
 	transform: translate(0px, 7px);
 	opacity: 0;
-	transition: all 0.25s ease;
+	transition-property: transform, opacity;
+	transition-duration: 0.15s, 0s;
+	transition-timing-function: ease-in;
+	transition-delay: 0s, 0.15s;
 }
-.menu-active .line2 {
+
+.menu-active #line2 {
 	opacity: 0;
-	transition: all 0.1s ease;
+	transition: all 0.15s ease;
 }
-.menu-active .line3 {
+.menu-active #line3 {
 	transform: translate(0px, -7px);
 	opacity: 0;
-	transition: all 0.25s ease;
+	transition-property: transform, opacity;
+	transition-duration: 0.15s, 0s;
+	transition-timing-function: ease-in;
+	transition-delay: 0s, 0.15s;
 }
 
-.menu-active .line4 {
+.menu-active #line4 {
 	transform: rotate(-45deg);
 	opacity: 1;
-	transition: all 0.2s ease;
-	transition-delay: 0.1s;
+	transition-property: transform, opacity;
+	transition-duration: 0.15s, 0s;
+	transition-timing-function: ease-out;
+	transition-delay: 0.15s, 0.15s;
 }
 
-.menu-active .line5 {
+.menu-active #line5 {
 	transform: rotate(45deg);
 	opacity: 1;
-	transition: all 0.2s ease;
-	transition-delay: 0.1s;
+	transition-property: transform, opacity;
+	transition-duration: 0.15s, 0s;
+		transition-timing-function: ease-out;
+
+	transition-delay: 0.15s, 0.15s;
 }
+
+
+
+/*.menu-active .line-1-3-wrapper {
+	opacity: 0;
+	transition: opacity 0s;
+	transition-delay: 0.15s;
+}*/
+
+/*.menu-active #line-4-wrapper {
+	transform: rotate(-45deg);
+	transition: all 1s ease;
+	transition-delay: 0.5s;
+}
+
+.menu-active #line-5-wrapper {
+	transform: rotate(45deg);
+	transition: all 1s ease;
+	transition-delay: 0.5s;
+}*/
+
+
+
+
+
+
+
+
+
 
 .wrapper {
 	position: absolute;
+	height: 15px;
+	width: 25px;
 }
 
 .line {
@@ -467,26 +494,48 @@ hr {
 .line1 {
 	top: 0px;
 	/*padding-bottom: 10px;*/
+	transition-property: transform, opacity;
+	transition-duration: 0.15s, 0s;
+	transition-timing-function: ease-out;
+	transition-delay: 0.15s, 0.15s;
 }
 
 .line2 {
 	top: 7px;
 	opacity: 1;
-	transition: all 0.22s ease;
-		transition-delay: 0.1s;
-
+	transition: all 0.3s ease-in;
 }
 
 .line3 {
 	top: 14px;
+	transition-property: transform, opacity;
+	transition-duration: 0.15s, 0s;
+	transition-timing-function: ease-out;
+	transition-delay: 0.15s, 0.15s;
 }
 
-.line4 {
+#line4, .line-4-wrapper {
 	top: 7px;
+	opacity: 0;
+	transition-property: transform, opacity;
+	transition-duration: 0.15s, 0s;
+	transition-timing-function: ease-in;
+	transition-delay: 0s, 0.15s;
+}
+
+#line5, .line-5-wrapper {
+	top: 7px;
+	opacity: 0;
+	transition-property: transform, opacity;
+	transition-duration: 0.15s, 0s;
+	transition-timing-function: ease-in;
+	transition-delay: 0s, 0.15s;
+}
+
+/*.opaque {
 	opacity: 0;
 }
 
-.line5 {
-	top: 7px;
+.opaque {
 	opacity: 0;
-}
+}*/
