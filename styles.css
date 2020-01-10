@@ -415,41 +415,41 @@ hr {
 	transform: translate(0px, 7px);
 	opacity: 0;
 	transition-property: transform, opacity;
-	transition-duration: 0.15s, 0s;
+	transition-duration: 165ms, 0s;
 	transition-timing-function: ease-in;
-	transition-delay: 0s, 0.15s;
+	transition-delay: 0s, 165ms;
 }
 
 .menu-active #line2 {
 	opacity: 0;
-	transition: all 0.15s ease;
+	transition: all 165ms ease;
 }
 .menu-active #line3 {
 	transform: translate(0px, -7px);
 	opacity: 0;
 	transition-property: transform, opacity;
-	transition-duration: 0.15s, 0s;
+	transition-duration: 165ms, 0s;
 	transition-timing-function: ease-in;
-	transition-delay: 0s, 0.15s;
+	transition-delay: 0s, 165ms;
 }
 
 .menu-active #line4 {
 	transform: rotate(-45deg);
 	opacity: 1;
 	transition-property: transform, opacity;
-	transition-duration: 0.15s, 0s;
+	transition-duration: 165ms, 0s;
 	transition-timing-function: ease-out;
-	transition-delay: 0.15s, 0.15s;
+	transition-delay: 165ms, 165ms;
 }
 
 .menu-active #line5 {
 	transform: rotate(45deg);
 	opacity: 1;
 	transition-property: transform, opacity;
-	transition-duration: 0.15s, 0s;
+	transition-duration: 165ms, 0s;
 		transition-timing-function: ease-out;
 
-	transition-delay: 0.15s, 0.15s;
+	transition-delay: 165ms, 165ms;
 }
 
 
@@ -457,7 +457,7 @@ hr {
 /*.menu-active .line-1-3-wrapper {
 	opacity: 0;
 	transition: opacity 0s;
-	transition-delay: 0.15s;
+	transition-delay: 165ms;
 }*/
 
 /*.menu-active #line-4-wrapper {
@@ -495,9 +495,9 @@ hr {
 	top: 0px;
 	/*padding-bottom: 10px;*/
 	transition-property: transform, opacity;
-	transition-duration: 0.15s, 0s;
+	transition-duration: 165ms, 0s;
 	transition-timing-function: ease-out;
-	transition-delay: 0.15s, 0.15s;
+	transition-delay: 165ms, 165ms;
 }
 
 .line2 {
@@ -509,27 +509,27 @@ hr {
 .line3 {
 	top: 14px;
 	transition-property: transform, opacity;
-	transition-duration: 0.15s, 0s;
+	transition-duration: 165ms, 0s;
 	transition-timing-function: ease-out;
-	transition-delay: 0.15s, 0.15s;
+	transition-delay: 165ms, 165ms;
 }
 
 #line4, .line-4-wrapper {
 	top: 7px;
 	opacity: 0;
 	transition-property: transform, opacity;
-	transition-duration: 0.15s, 0s;
+	transition-duration: 165ms, 0s;
 	transition-timing-function: ease-in;
-	transition-delay: 0s, 0.15s;
+	transition-delay: 0s, 165ms;
 }
 
 #line5, .line-5-wrapper {
 	top: 7px;
 	opacity: 0;
 	transition-property: transform, opacity;
-	transition-duration: 0.15s, 0s;
+	transition-duration: 165ms, 0s;
 	transition-timing-function: ease-in;
-	transition-delay: 0s, 0.15s;
+	transition-delay: 0s, 165ms;
 }
 
 /*.opaque {
