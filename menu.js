@@ -12,14 +12,15 @@ function activateMenu() {
 	menu.classList.toggle('menu-active');
 }
 
-window.addEventListener("resize", removeActiveClasses);
-
-function removeActiveClasses(e) {
-	let width = document.body.clientWidth;
-  	if (width > 600) {
-		nav.classList.remove('nav-active');
+function myFunction(x) {
+  if (!x.matches) {
+   		nav.classList.remove('nav-active');
 		main.classList.remove('main-active');
 		footer.classList.remove('main-active');
 		menu.classList.remove('menu-active');
 	}
 }
+
+var x = window.matchMedia("(max-width: 600px)")
+myFunction(x)
+x.addListener(myFunction)

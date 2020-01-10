@@ -33,6 +33,10 @@ main {
 	padding-bottom: 43px;
 }
 
+input, select, textarea, button, a {
+	-webkit-tap-highlight-color: none;
+}
+
 /*----------------------------------------------HEADING---------------------------------------------------*/
 
 h1, h2 {
