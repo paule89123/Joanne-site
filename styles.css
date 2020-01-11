@@ -136,7 +136,7 @@ ul li a:hover {
 }
 
 #reviewsTitle {
-	font-size: 25.58px;
+	font-size: 25.1px;
 	padding-bottom: 4px;
 }
 
@@ -455,13 +455,13 @@ footer {
 		}
 
 		#bio-photo {
-			width: 70%;
+			width: 70.8%;
 			float: none;
-			top: 0px;
+			top: -6px;
 			left: 50%;
-			margin-left: -35%;
+			margin-left: -35.4%;
 			padding-left: 0px;
-			padding-bottom: 50px;
+			padding-bottom: 25px;
 		}
 
 		#bio {
