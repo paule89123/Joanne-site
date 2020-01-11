@@ -269,6 +269,8 @@ footer {
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 		main {
+			position: relative;
+			top: -25px;
 			width: 78.6%;
 			-webkit-transform: translateY(0px);
 			    -ms-transform: translateY(0px);
@@ -446,15 +448,31 @@ footer {
 	margin-bottom: 50px;
 }
 
-#hr {
+.hr {
 	position: relative;
-	top: -42px;
-	background-color: rgba(34, 38, 42, 0.5);
+	background-color: rgba(34, 38, 42, 0.2);
 	margin: 0;
     border-style: none;
     border-width: 0;
     height: 1px;
     z-index: -2;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+}
+
+#hr1 {
+	top: -42px;
+}
+
+#hr2 {
+	top: 227px;
+	height: 1px;
+	z-index: 1000;
+}
+
+.hr-active {
+	opacity: 1;
+	-webkit-transition: opacity 1s ease;
 }
 
 #white-box {
@@ -582,6 +600,7 @@ footer {
 }
 
 .main-active {
+	top: 15px;
 	-webkit-transform: translateY(229px);
 	    -ms-transform: translateY(229px);
 	        transform: translateY(229px);
