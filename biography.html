@@ -20,14 +20,46 @@
   <h2>Mezzo Soprano</h2>
 </header>
 
-<!-- NAVBAR -->
-<nav>
+<!-- NAV FOR MOBILE-->
+<nav class="navMobile">
     <ul>
-      <li>
-        <a href="index.html">Home</a>
+      <li style="-webkit-backface-visibility: hidden;">
+        <a id="active" href="index.html">Home</a>
       </li>
       <li>
-        <a id="active" href="biography.html">Biography</a>
+        <a href="biography.html">Biography</a>
+      </li>
+      <li>
+        <a href="#">Schedule</a>
+      </li>
+      <li>
+        <a href="#">Gallery</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+
+    <div class="burger">
+            <div id="line1" class="line"></div>
+            <div id="line2" class="line"></div>
+            <div id="line3" class="line"></div>
+            <div id="line4" class="line"></div>
+            <div id="line5" class="line"></div>
+    </div>
+</nav>
+
+<div id="blackbox"></div>
+
+
+<!-- NAV FOR DESKTOP-->
+<nav class="navDesktop">
+    <ul>
+      <li>
+        <a id="active" href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="biography.html">Biography</a>
       </li>
       <li>
         <a href="#">Schedule</a>
