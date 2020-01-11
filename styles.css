@@ -14,6 +14,7 @@ body {
 	font-size: 1.05em;
 	text-align: left;
 	line-height: 1.66;
+	z-index: 1;
 }
 
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
@@ -39,9 +40,9 @@ main {
 	padding-bottom: 43px;
 }
 
-input, select, textarea, button, a,  {
+/*input, select, textarea, button, a,  {
 	-webkit-tap-highlight-color: 0;
-}
+}*/
 
 #blackbox {
 	display: block;
@@ -52,7 +53,7 @@ input, select, textarea, button, a,  {
 	position: absolute;
 	top: 159px;
 	margin-left: -50px;
-	z-index: -1;
+	z-index: 2;
 }
 
 /*----------------------------------------------HEADING---------------------------------------------------*/
@@ -62,6 +63,7 @@ h1, h2 {
 	font-family: 'Nanum Myeongjo', serif;
 	font-weight: 500;
     line-height: 1.2;
+    z-index: 10;
 }
 
 h1 {
@@ -91,11 +93,20 @@ li {
 	display: inline;
 }
 
-ul li a {
+.navDesktop ul li a {
 	font-family: 'Nanum Myeongjo', serif;
 	font-size: 15.28px;
 	text-decoration: none;
 	color: rgba(34, 38, 42, 0.7);
+	padding-left: 12px;
+    padding-right: 12px;
+}
+
+.navMobile ul li a {
+	font-family: 'Nanum Myeongjo', serif;
+	font-size: 15.28px;
+	text-decoration: none;
+	color: rgba(34, 38, 42, 0.9);
 	padding-left: 12px;
     padding-right: 12px;
 }
@@ -389,7 +400,10 @@ footer {
 			    -ms-transform: translateY(-20px);
 			        transform: translateY(-20px);
 			opacity: 0;
-			z-index: -2;
+			z-index: 100;
+
+
+			-webkit-font-smoothing: antialiased;
 		    -webkit-transition: opacity 350ms ease, -webkit-transform 0.9s ease;
 		    transition: opacity 350ms ease, -webkit-transform 0.9s ease;
 		    -o-transition: transform 0.9s ease, opacity 350ms ease;
@@ -537,7 +551,7 @@ hr {
 	    -ms-transform: translateY(0px);
 	        transform: translateY(0px);
 	opacity: 1;
-	z-index: 1;
+	z-index: 30;
     -webkit-transition: opacity 1230ms ease, -webkit-transform 0.5s ease;
     transition: opacity 1230ms ease, -webkit-transform 0.5s ease;
     -o-transition: transform 0.5s ease, opacity 1230ms ease;
