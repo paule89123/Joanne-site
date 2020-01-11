@@ -14,7 +14,7 @@ body {
 	font-size: 1.05em;
 	text-align: left;
 	line-height: 1.66;
-	z-index: 1;
+	z-index: 2;
 }
 
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
@@ -44,6 +44,7 @@ main {
 	-webkit-tap-highlight-color: 0;
 }*/
 
+/*Covering the nav-links when the burger menu is inactive*/
 #blackbox {
 	display: block;
 	height: 250px;
@@ -53,7 +54,15 @@ main {
 	position: absolute;
 	top: 159px;
 	margin-left: -50px;
-	z-index: 2;
+	z-index: 1;
+}
+
+
+/*Prevent sudden change in font-smoothing of the nav links when menu animation completes (issue is only present in Safari on Desktop, so I have limited the solution to large devices)*/
+@media screen and (min-device-width: 1280px) {
+  .navMobile ul li a {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
 }
 
 /*----------------------------------------------HEADING---------------------------------------------------*/
@@ -63,7 +72,7 @@ h1, h2 {
 	font-family: 'Nanum Myeongjo', serif;
 	font-weight: 500;
     line-height: 1.2;
-    z-index: 10;
+    z-index: 2;
 }
 
 h1 {
@@ -93,20 +102,11 @@ li {
 	display: inline;
 }
 
-.navDesktop ul li a {
+ul li a {
 	font-family: 'Nanum Myeongjo', serif;
 	font-size: 15.28px;
 	text-decoration: none;
 	color: rgba(34, 38, 42, 0.7);
-	padding-left: 12px;
-    padding-right: 12px;
-}
-
-.navMobile ul li a {
-	font-family: 'Nanum Myeongjo', serif;
-	font-size: 15.28px;
-	text-decoration: none;
-	color: rgba(34, 38, 42, 0.9);
 	padding-left: 12px;
     padding-right: 12px;
 }
@@ -400,10 +400,10 @@ footer {
 			    -ms-transform: translateY(-20px);
 			        transform: translateY(-20px);
 			opacity: 0;
-			z-index: 100;
+			z-index: 1;
 
 
-			-webkit-font-smoothing: antialiased;
+			/*-webkit-font-smoothing: antialiased;*/
 		    -webkit-transition: opacity 350ms ease, -webkit-transform 0.9s ease;
 		    transition: opacity 350ms ease, -webkit-transform 0.9s ease;
 		    -o-transition: transform 0.9s ease, opacity 350ms ease;
@@ -551,7 +551,7 @@ hr {
 	    -ms-transform: translateY(0px);
 	        transform: translateY(0px);
 	opacity: 1;
-	z-index: 30;
+	z-index: 2;
     -webkit-transition: opacity 1230ms ease, -webkit-transform 0.5s ease;
     transition: opacity 1230ms ease, -webkit-transform 0.5s ease;
     -o-transition: transform 0.5s ease, opacity 1230ms ease;
