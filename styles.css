@@ -44,7 +44,8 @@ main {
 	-webkit-tap-highlight-color: 0;
 }*/
 
-/*Covering the nav-links when the burger menu is inactive*/
+/*This invisible (opacity: 0) box is to cover the nav links when the navMobile burger menu is inactive. The 
+z-index property positions the box above the inactive menu, but below the active menu.*/
 #blackbox {
 	display: block;
 	height: 250px;
@@ -57,11 +58,12 @@ main {
 	z-index: 1;
 }
 
-
-/*Prevent sudden change in font-smoothing of the nav links when menu animation completes (issue is only present in Safari on Desktop, so I have limited the solution to large devices)*/
+/*Safari on desktop (but seemingly not on mobile) has an anti-aliasing issue when animations complete that appears to
+cause a sudden change in font-weight. My solution here is to change the font-smoothing property on desktops.*/
 @media screen and (min-device-width: 1280px) {
   .navMobile ul li a {
-    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(34, 38, 42, 0.8);
   }
 }
 
@@ -70,7 +72,7 @@ main {
 h1, h2 {
 	text-align: center;
 	font-family: 'Nanum Myeongjo', serif;
-	font-weight: 500;
+	font-weight: 400;
     line-height: 1.2;
     z-index: 2;
 }
@@ -109,15 +111,18 @@ ul li a {
 	color: rgba(34, 38, 42, 0.7);
 	padding-left: 12px;
     padding-right: 12px;
+    font-weight: 400;
+    /*letter-spacing: 0.4px;*/
 }
 
 #active {
 	color: rgba(34, 38, 42, 0.8);
 	font-weight: 700;
+	/*letter-spacing: -1px;*/
 }
 
 ul li a:hover {
-	color: rgba(34, 38, 42, 0.9);
+	color: rgba(43, 48, 42, 0.9);
 }
 
 .navMobile {
