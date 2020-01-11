@@ -454,16 +454,19 @@ footer {
 			padding-top: 25px;
 		}
 
-		#bio-photo-container {
-			width: 100%;
-			/*float: ;*/
-			top: 500px;
-			left: 300px;
-			margin-left: -25%
+		#bio-photo {
+			width: 70%;
+			float: none;
+			top: 0px;
+			left: 50%;
+			margin-left: -35%;
+			padding-left: 0px;
+			padding-bottom: 50px;
 		}
 
 		#bio {
 			width: 100%;
+			display: block;
 		}
 
 }
