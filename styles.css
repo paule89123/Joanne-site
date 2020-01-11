@@ -441,17 +441,34 @@ footer {
 }
 
 #main-bio {
-	border-top: 1px solid #e0e0e0;
+	/*border-top: 1px solid #e0e0e0;*/
 	border-bottom: 1px solid #e0e0e0;
 	margin-bottom: 50px;
 }
 
-hr {
-	background-color: #e0e0e0;
+#hr {
+	position: relative;
+	top: -42px;
+	background-color: rgba(34, 38, 42, 0.5);
 	margin: 0;
     border-style: none;
     border-width: 0;
-    height: 1px
+    height: 1px;
+    z-index: -2;
+}
+
+#white-box {
+	position: relative;
+	top: -55px;
+	background-color: white;
+	margin: 0;
+    border-style: none;
+    border-width: 0;
+    height: 25px;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    z-index: -1;
 }
 
 
