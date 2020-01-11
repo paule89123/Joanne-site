@@ -201,6 +201,37 @@ footer {
 	transition: none;
 }
 
+/*--------------------------------------------BIOGRAPHY--------------------------------------------*/
+
+#bio-container {
+	padding-bottom: 120px;
+	/*float: left;*/
+	width: 100%;
+	padding-top: 25px;
+}
+
+#bio {
+	margin-right: 60px;
+	width: 100%;
+}
+
+#bio-photo {
+	position: relative;	
+	box-sizing: content-box;
+	float: right;
+	width: 48%;
+	padding-left: 9%;
+	top: -50px;
+}
+
+
+#main-bio {
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 50px;
+}
+
+
 /*--------------------------------------------MEDIA QUERIES--------------------------------------------*/
 
 @media (max-width: 992px) {
@@ -408,9 +439,6 @@ footer {
 			        transform: translateY(-20px);
 			opacity: 0;
 			z-index: 1;
-
-
-			/*-webkit-font-smoothing: antialiased;*/
 		    -webkit-transition: opacity 350ms ease, -webkit-transform 0.9s ease;
 		    transition: opacity 350ms ease, -webkit-transform 0.9s ease;
 		    -o-transition: transform 0.9s ease, opacity 350ms ease;
@@ -418,35 +446,29 @@ footer {
 		    transition: transform 0.9s ease, opacity 350ms ease, -webkit-transform 0.9s ease;
 		}
 
+		#bio-container {
+			padding-bottom: 120px;
+			/*float: none;*/
+			width: 100%;
+			padding-right: 0px;
+			padding-top: 25px;
+		}
+
+		#bio-photo-container {
+			width: 100%;
+			/*float: ;*/
+			top: 500px;
+			left: 300px;
+			margin-left: -25%
+		}
+
+		#bio {
+			width: 100%;
+		}
+
 }
 
 
-/*--------------------------------------------BIOGRAPHY--------------------------------------------*/
-
-#bio-container {
-	padding-bottom: 120px;
-	float: left;
-	width: 50%;
-	padding-right: 60px;
-	padding-top: 25px;
-}
-
-#bio-photo-container {
-	position: absolute;	
-	width: 50%;
-	top: 40px;
-	right: 0px;
-}
-
-#bio-photo {
-	width: 100%;
-}
-
-#main-bio {
-	border-top: 1px solid #e0e0e0;
-	border-bottom: 1px solid #e0e0e0;
-	margin-bottom: 50px;
-}
 
 /*.hr {
 	position: relative;
