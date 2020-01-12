@@ -854,7 +854,6 @@ label {
 	width: 80%;
 	min-width: 240px;
 	border: 1px solid #e0e0e0;
-	/*border-radius: 2px;*/
 	/*border-width: 5px;*/
 }
 
@@ -897,6 +896,13 @@ textarea {
 	text-shadow:none;
 	position: relative;
 	top: -30px;
+}
+
+input, textarea {
+	border-radius: 1px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 /*
