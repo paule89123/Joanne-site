@@ -40,9 +40,9 @@ main {
 	padding-bottom: 36px;
 }
 
-/*input, select, textarea, button, a,  {
-	-webkit-tap-highlight-color: 0;
-}*/
+.burger {
+	-webkit-tap-highlight-color: transparent;
+}
 
 /*This invisible (opacity: 0) box is to cover the nav links when the nav-mobile burger menu is inactive. The 
 z-index property positions the box above the inactive menu, but below the active menu.*/
@@ -760,7 +760,7 @@ footer {
 	border-bottom: 1px solid #e0e0e0;
 	margin-bottom: 50px;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 80px;
 }
 
 #images-container {
