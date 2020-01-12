@@ -27,7 +27,7 @@
         <a href="index.html">Home</a>
       </li>
       <li>
-        <a id="active" href="biography.html">Biography</a>
+        <a href="biography.html">Biography</a>
       </li>
       <li>
         <a href="schedule.html">Schedule</a>
@@ -36,7 +36,7 @@
         <a href="gallery.html">Gallery</a>
       </li>
       <li>
-        <a href="contact.html">Contact</a>
+        <a id="active" href="contact.html">Contact</a>
       </li>
     </ul>
 
@@ -59,7 +59,7 @@
         <a href="index.html">Home</a>
       </li>
       <li>
-        <a id="active" href="biography.html">Biography</a>
+        <a href="biography.html">Biography</a>
       </li>
       <li>
         <a href="schedule.html">Schedule</a>
@@ -68,29 +68,45 @@
         <a href="gallery.html">Gallery</a>
       </li>
       <li>
-        <a href="contact.html">Contact</a>
+        <a id="active" href="contact.html">Contact</a>
       </li>
     </ul>
 </nav>
 
-<main id="main-bio">
+<main id="main-contact">
 
+<!-- CONTACT -->
 
-<!-- BIOGRAPHY -->
-<div class="default-text" id="bio-container">
-    <div class="title">Biography</div>
-    <br>
-
-        <img id="bio-photo" src="./images/bio-photo.jpg">
-
-        <span id="bio">
-        From pop to classical to jazz, Joanne’s exceptional vocal skills make her one of the most sought after performers in London. A graduate from the Guildhall School of Music, Joanne can adapt her performance to suit any ambience and venue. She can perform as a soloist and as part of a duo and has an extensive repertoire which is perfect for wedding ceremonies and after party entertainment.
-        <br><br>
-        She has performed both internationally, and at favoured London haunts: Ronnie Scott’s, the Barbican, Southbank Centre, Hayward Gallery (for Sir Anish Kapoor) and St Pancras Renaissance Hotel.
-        <br><br>
-        <a href="https://www.msmnyc.edu/news/msm-spotlight-voice-students-joanne-evans-mm-21-and-blair-cagney-bm-18-mm-20/" style="text-decoration: none; color: #0070c9" target="_blank">Read more here in an interview Joanne recently gave at MSM.</a>
-      </span>
+<div class="default-text" id="gallery-container">
+    <div class="title">
+        Contact
     </div>
+    <br>
+    <div id="bio">
+        If you would like to contact me, please leave me a message or add me on any of the social media links below. <i class="fa fa-smile-o" aria-hidden="true"></i>
+    <br><br>
+    </div>
+
+
+    <div id="form">
+
+    <form action="/action_page.php">
+      <label for="name">Name</label>
+        <input type="text" id="name">
+          <br>
+      <label for="email">Email address</label>
+        <input type="email" id="email">
+          <br>
+      <div id="message-wrapper">
+        <label for="message">Message</label>
+          <textarea id="message"></textarea>
+      </div>
+          <br><br>
+      <input type="submit" value="Send" id="submit">
+    </form> 
+
+    </div>
+
 </div>
 
 </main>

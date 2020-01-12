@@ -30,13 +30,13 @@
         <a href="biography.html">Biography</a>
       </li>
       <li>
-        <a href="#">Schedule</a>
+        <a href="schedule.html">Schedule</a>
       </li>
       <li>
         <a id="active" href="gallery.html">Gallery</a>
       </li>
       <li>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </li>
     </ul>
 
@@ -49,7 +49,7 @@
     </div>
 </nav>
 
-<div id="blackbox"></div>
+<div id="invisible-box"></div>
 
 
 <!-- NAV FOR DESKTOP-->
@@ -62,25 +62,35 @@
         <a href="biography.html">Biography</a>
       </li>
       <li>
-        <a href="#">Schedule</a>
+        <a href="schedule.html">Schedule</a>
       </li>
       <li>
         <a id="active" href="gallery.html">Gallery</a>
       </li>
       <li>
-        <a href="#">Contact</a>
+        <a href="contact.html">Contact</a>
       </li>
     </ul>
 </nav>
 
-<main id="main-gallery">
+<main class="main-gallery">
 
 <!-- GALLERY -->
-<div class="gallery-container">
-    <img src="./images/gallery-image-1.jpg" class="gallery-image">
-    <img src="./images/gallery-image-2-cropped.jpg" class="gallery-image">
-    <img src="./images/gallery-image-3.jpg" class="gallery-image">
-    <img src="./images/gallery-image-4-cropped.jpg" class="gallery-image">
+
+<div class="default-text" id="gallery-container">
+    <div class="title">
+        Gallery
+    </div>
+    <br>
+    <div id="bio">
+        A selection of photos from Joanne's recent performances. Click any photo to enlarge.
+    <br><br>
+    </div>
+</div>
+
+
+<div id="images-container">
+  <img src="./images/gallery-image-1.jpg" class="gallery-image column1 row1"><img src="./images/gallery-image-2-cropped.jpg" class="gallery-image column2 row1"><img src="./images/gallery-image-3.jpg" class="gallery-image column1"><img src="./images/gallery-image-4-cropped.jpg" class="gallery-image column2">
 </div>
 
 </main>
@@ -91,7 +101,7 @@
         <a class="btn btn-social-icon" target="_blank" href="https://twitter.com/joandanne?lang=en"><i class="fa fa-twitter"></i></a>
         <a class="btn btn-social-icon" target="_blank" href="https://www.youtube.com/channel/UC4rlgPAWjiKDojkeeG96CAA"><i class="fa fa-youtube"></i></a>
         <a class="btn btn-social-icon" target="_blank" href="https://www.instagram.com/joanndasings"><i class="fa fa-instagram"></i></a>
-        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+        <a class="btn btn-social-icon" href="contact.html"><i class="fa fa-envelope-o"></i></a>
 </footer>
 
 <script src="menu.js"></script>
