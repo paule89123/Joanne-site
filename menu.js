@@ -1,11 +1,10 @@
-let nav = document.querySelector('.navMobile');
+let nav = document.querySelector('.nav-mobile');
 let main = document.querySelector('main');
 let footer = document.querySelector('footer');
 let menu = document.querySelector('.burger');
 // let hr1 = document.querySelector('#hr1');
 // let hr2 = document.querySelector('#hr2');
 // let whiteBox = document.querySelector('.white-box');
-
 
 
 menu.addEventListener('click', activateMenu);

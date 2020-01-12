@@ -44,7 +44,7 @@ main {
 	-webkit-tap-highlight-color: 0;
 }*/
 
-/*This invisible (opacity: 0) box is to cover the nav links when the navMobile burger menu is inactive. The 
+/*This invisible (opacity: 0) box is to cover the nav links when the nav-mobile burger menu is inactive. The 
 z-index property positions the box above the inactive menu, but below the active menu.*/
 #blackbox {
 	display: block;
@@ -61,7 +61,7 @@ z-index property positions the box above the inactive menu, but below the active
 /*Safari on desktop (but seemingly not on mobile) has an anti-aliasing issue when animations complete that appears to
 cause a sudden change in font-weight. My solution here is to change the font-smoothing property on desktops.*/
 @media screen and (min-device-width: 1280px) {
-  .navMobile ul li a {
+  .nav-mobile ul li a {
     -webkit-font-smoothing: antialiased;
     color: rgba(34, 38, 42, 0.8);
   }
@@ -125,7 +125,7 @@ ul li a:hover {
 	color: rgba(43, 48, 42, 0.9);
 }
 
-.navMobile {
+.nav-mobile {
 	display: none;
 }
 
@@ -228,6 +228,7 @@ footer {
 	width: 48%;
 	padding-left: 9%;
 	top: -50px;
+	/*margin-bottom: -9px*/
 }
 
 
@@ -391,11 +392,11 @@ footer {
 			padding-right: 40px;
 		}*/
 
-		.navDesktop {
+		.nav-desktop {
 			display: none;
 		}
 
-		.navMobile {
+		.nav-mobile {
 			display: block;
 		}
 
@@ -415,17 +416,17 @@ footer {
 			background-color: rgba(34, 38, 42, 0.5);
 		}
 
-		.navMobile {
+		.nav-mobile {
 			height: 18px;
 		}
 
-		.navMobile ul li {
+		.nav-mobile ul li {
 			padding-bottom: 25px;
 		}
 
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
-		.navMobile ul {
+		.nav-mobile ul {
 			position: absolute;
 			height: 200px;
 			width: 100%;
@@ -735,3 +736,42 @@ footer {
 	        transition-delay: 165ms, 165ms;
 }
 
+
+/*---------------------------------------------GALLERY----------------------------------------------------*/
+
+#main-gallery {
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.gallery-image {
+	width: 48.3%;
+	float: left;
+	padding: 1.7%;
+}
+
+.gallery-container {
+	position: relative;
+	width: 107.1%;
+	left: 50%;
+	margin-left: -51.7%;
+	/*align-items: center;*/
+}
+
+
+@media (max-width: 600px) {
+	.gallery-image {
+	width: 100%;
+	box-sizing: content-box;
+	padding: 0px 0px 10px 0px;
+	}
+
+	.gallery-container {
+		position: sticky;
+		width: 100%;
+	}
+}
