@@ -319,11 +319,6 @@ footer {
 			transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 		}
 
-		.default-text {
-		    font-family: 'Nanum Gothic', sans-serif;
-			font-size: 1.04em;
-		}
-
 		.homepage-media1 {
 			position: relative;			
 			width: 127.22%;
