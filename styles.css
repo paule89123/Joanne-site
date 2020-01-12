@@ -964,6 +964,9 @@ input, textarea {
 		#main-contact {
 			height: 710px;
 		}
-}
 
+		input, textarea {
+			border-radius: 3px;
+		}
+}
 
