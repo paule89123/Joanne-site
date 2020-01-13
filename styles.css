@@ -876,34 +876,38 @@ textarea {
 }
 
 #submit {
-	background: #64d5c3;
-	color: white;
-	border-style: none;
-	border-color: #64d5c3;
+	background: white;
+	color: rgba(34, 38, 42);
+	/*border-style: none;*/
+	border-color: rgba(34, 38, 42);
+	border-width: 1px;
 	height: 40px;
 	width: 100px;
-	font: bold 13px nanum, sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	font-family: Nanum Gothic, sans-serif;
 	text-shadow:none;
 	position: relative;
 	top: -30px;
-	/*left: -65px;*/
+	transition: all 200ms ease;
 }
 
 #submit:hover {
-	background: white;
-	color: #64d5c3;
+	background: rgba(34, 38, 42);
+	color: white;
 	border-style: solid;
-	border-color: #64d5c3;
+	border-color: rgba(34, 38, 42);
 	height: 40px;
 	width: 100px;
-	font: bold 13px nanum, sans-serif;
+	/*font: 13px Nanum Gothic, sans-serif;*/
 	text-shadow:none;
 	position: relative;
 	top: -30px;
+	transition: all 200ms ease;
 }
 
 input, textarea {
-	border-radius: 1px;
+	border-radius: 2px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
