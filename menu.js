@@ -48,6 +48,12 @@ const rightArrow = document.querySelector('#right-arrow-div');
 const shadow = document.querySelector('#shadow');
 const notificationBox = document.querySelector('.notification-box');
 let index = 0;
+const duplicateCirclesSet1 = document.querySelector('.duplicate-circles-set-1');
+const duplicateCirclesSet2 = document.querySelector('.duplicate-circles-set-2');
+const duplicateCirclesSet3 = document.querySelector('.duplicate-circles-set-3');
+const duplicateCirclesSet4 = document.querySelector('.duplicate-circles-set-4');
+
+
 
 thumbnailPhoto1.addEventListener("click", () => {displayModal(1);});
 thumbnailPhoto2.addEventListener("click", () => {displayModal(2);});
@@ -86,21 +92,25 @@ function displayModal(n) {
 	if (n === 1) {
 		modalPhoto1.style.opacity = "1";
 		modalPhoto1.style.zIndex = "4";
+		duplicateCirclesSet1.style.opacity = "1";
 		index = 1;
 	}
 	if (n === 2) {
 		modalPhoto2.style.opacity = "1";
 		modalPhoto2.style.zIndex = "4";
+		duplicateCirclesSet2.style.opacity = "1";
 		index = 2;
 	}
 	if (n === 3) {
 		modalPhoto3.style.opacity = "1";
 		modalPhoto3.style.zIndex = "4";
+		duplicateCirclesSet3.style.opacity = "1";
 		index = 3;
 	}
 	if (n === 4) {
 		modalPhoto4.style.opacity = "1";
 		modalPhoto4.style.zIndex = "4";
+		duplicateCirclesSet4.style.opacity = "1";
 		index = 4;
 	}
 
@@ -135,10 +145,20 @@ function closeModal() {
 	leftArrow.style.opacity = "0";
 	rightArrow.style.opacity = "0";
 
+	duplicateCirclesSet1.style.opacity = "0";
+	duplicateCirclesSet2.style.opacity = "0";
+	duplicateCirclesSet3.style.opacity = "0";
+	duplicateCirclesSet4.style.opacity = "0";
+
 	shadow.style.transition = "none";
 	closeIcon.style.transition = "none";
 	leftArrow.style.transition = "none";
 	rightArrow.style.transition = "none";
+
+	duplicateCirclesSet1.style.transition = "none";
+	duplicateCirclesSet2.style.transition = "none";
+	duplicateCirclesSet3.style.transition = "none";
+	duplicateCirclesSet4.style.transition = "none";
 }
 
 function changePhoto(x, n) {
@@ -167,6 +187,11 @@ function changePhoto(x, n) {
 		modalPhoto3.style.opacity = "0";
 		modalPhoto4.style.opacity = "0";
 
+		duplicateCirclesSet1.style.opacity = "1";
+		duplicateCirclesSet2.style.opacity = "0";
+		duplicateCirclesSet3.style.opacity = "0";
+		duplicateCirclesSet4.style.opacity = "0";
+
 		modalPhoto1.style.zIndex = "3";
 
 		modalPhoto1.style.transition = "none";
@@ -180,6 +205,11 @@ function changePhoto(x, n) {
 		modalPhoto2.style.opacity = "1";
 		modalPhoto3.style.opacity = "0";
 		modalPhoto4.style.opacity = "0";
+
+		duplicateCirclesSet1.style.opacity = "0";
+		duplicateCirclesSet2.style.opacity = "1";
+		duplicateCirclesSet3.style.opacity = "0";
+		duplicateCirclesSet4.style.opacity = "0";
 
 		modalPhoto2.style.zIndex = "3";
 
@@ -195,6 +225,11 @@ function changePhoto(x, n) {
 		modalPhoto3.style.opacity = "1";
 		modalPhoto4.style.opacity = "0";
 
+		duplicateCirclesSet1.style.opacity = "0";
+		duplicateCirclesSet2.style.opacity = "0";
+		duplicateCirclesSet3.style.opacity = "1";
+		duplicateCirclesSet4.style.opacity = "0";
+
 		modalPhoto3.style.zIndex = "3";
 
 		modalPhoto1.style.transition = "opacity 0.5s ease";
@@ -208,6 +243,11 @@ function changePhoto(x, n) {
 		modalPhoto2.style.opacity = "0";
 		modalPhoto3.style.opacity = "0";
 		modalPhoto4.style.opacity = "1";
+
+		duplicateCirclesSet1.style.opacity = "0";
+		duplicateCirclesSet2.style.opacity = "0";
+		duplicateCirclesSet3.style.opacity = "0";
+		duplicateCirclesSet4.style.opacity = "1";
 
 		modalPhoto4.style.zIndex = "3";
 
@@ -242,3 +282,4 @@ document.querySelectorAll('.circle4').forEach(item => {
     changePhoto(0, 4);
   })
 })
+
