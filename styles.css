@@ -764,9 +764,9 @@ footer {
 
 @media (max-width: 768px) {
 		.modal-photo-div {
-			width: 86%;
-			margin-left: -43%;
-			margin-top: -28.67%;
+			width: 100%;
+			margin-left: -50%;
+			margin-top: -33.33%;
 		}
 
 		#left-arrow-div {
@@ -775,6 +775,14 @@ footer {
 
 		#right-arrow-div {
 			right: 2%;
+		}
+
+		#left-arrow {
+			filter: drop-shadow(0px 0px 6px white);
+		}
+
+		#right-arrow {
+			filter: drop-shadow(0px 0px 6px white);
 		}
 }
 
@@ -788,15 +796,19 @@ footer {
 		#left-arrow {
 			left: 2%;
 			width: 22px;
+		}
+
+		#left-arrow-div {
 			margin-top: -11px;
-			filter: drop-shadow(0px 0px 3px white);
 		}
 
 		#right-arrow {
 			right: 2%;
 			width: 22px;
+		}
+
+		#right-arrow-div {
 			margin-top: -11px;
-			filter: drop-shadow(0px 0px 5px white);
 		}
 }
 
