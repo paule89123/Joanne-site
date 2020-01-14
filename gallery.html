@@ -14,6 +14,8 @@
 
 <body>
   
+<div class="notification-box default-text">Rotate device landscape for fullscreen image</div>
+
 <div class="modal-background"></div>
 <div id="close-icon-div"><img id="close-icon" src="./images/x-icon.svg"></div>
 <div id="left-arrow-div"><img id="left-arrow" src="./images/left-arrow.svg"></div>
@@ -24,6 +26,7 @@
   <h1>Joanne Evans</h1>
   <h2>Mezzo Soprano</h2>
 </header>
+
 
 
 <!-- NAV FOR MOBILE-->
@@ -96,18 +99,56 @@
 
 
 <div id="images-container">
-<img src="./images/gallery-image-1.jpg" class="gallery-image column1 row1" id="thumbnail1"><img src="./images/gallery-image-2-cropped.jpg" class="gallery-image column2 row1" id="thumbnail2"><img src="./images/gallery-image-3.jpg" class="gallery-image column1" id="thumbnail3"><img src="./images/gallery-image-4-cropped.jpg" class="gallery-image column2" id="thumbnail4">
+    <img src="./images/gallery-image-1.jpg" class="gallery-image column1 row1" id="thumbnail1"><img src="./images/gallery-image-2-cropped.jpg" class="gallery-image column2 row1" id="thumbnail2"><img src="./images/gallery-image-3.jpg" class="gallery-image column1" id="thumbnail3"><img src="./images/gallery-image-4-cropped.jpg" class="gallery-image column2" id="thumbnail4">
 </div>
 
 </main>
 
 
 <!-- MODAL -->
-<div class="modal-photo-div" id="modal-photo-1"><div class="caption default-text">1 / 4</div><img src="./images/gallery-image-1.jpg" class="modal-photo"></div>
-<div class="modal-photo-div" id="modal-photo-2"><div class="caption default-text">2 / 4</div><img src="./images/gallery-image-2-cropped.jpg" class="modal-photo"></div>
-<div class="modal-photo-div" id="modal-photo-3"><div class="caption default-text">3 / 4</div><img src="./images/gallery-image-3.jpg" class="modal-photo"></div>
-<div class="modal-photo-div" id="modal-photo-4"><div class="caption default-text">4 / 4</div><img src="./images/gallery-image-4-cropped.jpg" class="modal-photo"></div>
-<div class="modal-photo-div shadow"><img src="./images/for-creating-shadow.jpg" class="modal-photo" id="shadow"></div>
+<div class="modal-photo-div" id="modal-photo-1">
+  <div class="circles">
+    <i class="fa fa-circle circle1"></i>
+    <i class="fa fa-circle-thin circle2 inactive-circle"></i>
+    <i class="fa fa-circle-thin circle3 inactive-circle"></i>
+    <i class="fa fa-circle-thin circle4 inactive-circle"></i>
+  </div>
+  <img src="./images/gallery-image-1.jpg" class="modal-photo">
+</div>
+
+<div class="modal-photo-div" id="modal-photo-2">
+    <div class="circles">
+    <i class="fa fa-circle-thin circle1 inactive-circle"></i>
+    <i class="fa fa-circle circle2"></i>
+    <i class="fa fa-circle-thin circle3 inactive-circle"></i>
+    <i class="fa fa-circle-thin circle4 inactive-circle"></i>
+  </div>
+  <img src="./images/gallery-image-2-cropped.jpg" class="modal-photo">
+</div>
+
+<div class="modal-photo-div" id="modal-photo-3">
+    <div class="circles">
+    <i class="fa fa-circle-thin circle1 inactive-circle"></i>
+    <i class="fa fa-circle-thin circle2 inactive-circle"></i>
+    <i class="fa fa-circle circle3"></i>
+    <i class="fa fa-circle-thin circle4 inactive-circle"></i>
+  </div>
+  <img src="./images/gallery-image-3.jpg" class="modal-photo">
+</div>
+
+<div class="modal-photo-div" id="modal-photo-4">
+    <div class="circles">
+    <i class="fa fa-circle-thin circle1 inactive-circle"></i>
+    <i class="fa fa-circle-thin circle2 inactive-circle"></i>
+    <i class="fa fa-circle-thin circle3 inactive-circle"></i>
+    <i class="fa fa-circle circle4 "></i>
+  </div>
+  <img src="./images/gallery-image-4-cropped.jpg" class="modal-photo">
+</div>
+
+<div class="modal-photo-div shadow">
+  <img src="./images/for-creating-shadow.jpg" class="modal-photo" id="shadow">
+</div>
 
 <!-- Social media -->
 <footer>
