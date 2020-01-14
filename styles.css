@@ -751,6 +751,14 @@ footer {
 			margin-left: -40%;
 			margin-top: -26.67%;
 		}
+
+		#left-arrow-div {
+			left: 5%;
+		}
+
+		#right-arrow-div {
+			right: 5%;
+		}
 }
 
 @media (max-width: 768px) {
@@ -758,6 +766,14 @@ footer {
 			width: 86%;
 			margin-left: -43%;
 			margin-top: -28.67%;
+		}
+
+		#left-arrow-div {
+			left: 2%;
+		}
+
+		#right-arrow-div {
+			right: 2%;
 		}
 }
 
