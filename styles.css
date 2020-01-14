@@ -815,6 +815,16 @@ footer {
 		}
 }
 
+.caption {
+	display: inline;
+	position: absolute;
+	top: 12px;
+	left: 14px;
+	color: white;
+	font-size: 14px;
+
+}
+
 
 /*---------------------------------------------CONTACT----------------------------------------------------*/
 
