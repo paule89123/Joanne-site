@@ -81,7 +81,7 @@ function displayModal(n) {
 	closeIcon.style.opacity = "1";
 	leftArrow.style.opacity = "1";
 	rightArrow.style.opacity = "1";
-	notificationBox.style.display = "inline-block";
+	notificationBox.style.display = "inline";
 
 	if (n === 1) {
 		modalPhoto1.style.opacity = "1";
