@@ -135,6 +135,7 @@ ul li a:hover {
 
 #review-container {
     padding-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 .title {
@@ -171,17 +172,6 @@ ul li a:hover {
     color: #c31432;
 }
 
-/*---------------------------------------------SOUNDCLOUD-----------------------------------------------*/
-
-#soundcloud {
-    padding-bottom: 50px;
-}
-
-/*---------------------------------------------YOUTUBE VID-----------------------------------------------*/
-
-#youtube-video {
-    padding-bottom: 60px;
-}
 
 /*-----------------------------------------------FOOTER-----------------------------------------------*/
 
@@ -270,11 +260,7 @@ footer {
         right: 13.61%;
     }
 
-    .homepage-media2 {
-        position: relative;
-        width: 120%;
-        right: 10%;
-    }
+
 
     /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
